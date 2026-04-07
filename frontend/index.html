@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local AI Browser Agent</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <h1>Local AI Browser Agent</h1>
+        <p>Send plain English tasks and let the local browser automation agent execute them.</p>
+      </section>
+
+      <section class="controls">
+        <textarea id="task-input" placeholder="Enter a browser task, for example: Open Google and search for AI news"></textarea>
+        <button id="run-task">Run Task</button>
+      </section>
+
+      <section class="status-panel">
+        <div class="status-card">
+          <h2>Status</h2>
+          <div id="status">Ready</div>
+        </div>
+        <div class="status-card">
+          <h2>Task Logs</h2>
+          <pre id="log-output" class="log-output"></pre>
+        </div>
+      </section>
+
+      <section class="history-panel">
+        <h2>Recent History</h2>
+        <ul id="history-list"></ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
